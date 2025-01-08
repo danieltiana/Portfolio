@@ -22,14 +22,14 @@ export default function TaskBar({ activeWindow, setActiveWindow, setClassicMode 
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 h-20 bg-gray-950/80 backdrop-blur-xl border-t border-gray-800">
+    <div className="fixed top-0 left-0  h-full bg-gray-950/80 backdrop-blur-xl border-t border-gray-800">
       <div className="absolute inset-0">
         <div className="absolute bottom-0 left-1/4 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-blue-500/50 to-transparent" />
         <div className="absolute bottom-0 left-1/3 w-1/3 h-[1px] bg-gradient-to-r from-transparent via-purple-500/50 to-transparent" />
       </div>
 
       <div className="relative h-full flex items-center justify-center gap-2 px-4">
-        <div className="flex gap-3">
+        <div className="flex flex-col gap-3">
           {taskBarItems.map((item) => {
             const Icon = item.icon;
             const isActive = activeWindow === item.id;

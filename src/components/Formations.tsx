@@ -15,7 +15,7 @@ export default function Formations() {
     {
       icon: brain,
       titre: "Auto didacte",
-      description: "Apprentissage basique et autonomme basiqque de developpement",
+      description: "Apprentissage et autonomme de developpement",
       date: "Depuis 2022 - aujourd'hui",
       ecole: "Projets d'apprentissage basique",
     },
