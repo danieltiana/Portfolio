@@ -1,11 +1,13 @@
 import { ExternalLink, Github } from "lucide-react";
+import ikandra from "./../img/ikandra.jpg";
+import magic from "./../img/magic.jpg";
 
 export default function Projects() {
   const projets = [
     {
       title: "Ikandra",
       description: "Mini-plateforme de recrutement et GRH",
-      image: "img/ikandra.jpg",
+      image: ikandra,
       tech: ["Html", "css", "PHP", "Mysql"],
       lien: "",
       github: "https://github.com/danieltiana/ikandra",
@@ -13,7 +15,7 @@ export default function Projects() {
     {
       title: "Magic-Mastering",
       description: "Refonte prestashop 8.2",
-      image: "img/magic.jpg",
+      image: magic,
       tech: ["php", "Js", "Html", "css"],
       lien: "https://www.serveur28.projets-omega.net",
       github: "",
