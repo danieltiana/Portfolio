@@ -14,10 +14,14 @@ export default function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    emailjs.send("service_qjqufnq", "template_fwyufut", data).then((response) => {
-      console.log(response.text);
+    if(data.email && data.Subject && data.message){
+        emailjs.send("service_qjqufnq", "template_fwyufut", data).then((response) => {
       alert("Message envoyé");
     });
+ 
+    }else{
+      alert("Veuillez remplir tous les formulaires")
+    }
   };
 
   useEffect(() => {
